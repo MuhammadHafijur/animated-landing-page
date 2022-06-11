@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "variants";
+
 const TextContainer = () => {
   return (
     <div className="textContainer">
@@ -8,9 +11,14 @@ const TextContainer = () => {
       </div>
 
       {/* Middle */}
-      <div className="textContainer-middle">
+      <motion.div
+        variants={fadeIn()}
+        initial="initial"
+        animate="animate"
+        className="textContainer-middle"
+      >
         <span className="">ORANGE</span>
-      </div>
+      </motion.div>
 
       {/* Bottom */}
       <div className="textContainer-bottom">
