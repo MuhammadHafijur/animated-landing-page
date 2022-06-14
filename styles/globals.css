@@ -50,7 +50,7 @@
     @apply flex items-center justify-between;
   }
   .textContainer-bottom > button {
-    @apply p-2 text-base tracking-wide text-white lowercase bg-gray-900 rounded-lg md:px-6 md:py-3 md:text-lg;
+    @apply p-2 text-base tracking-wide text-white bg-gray-900 rounded-lg md:px-6 md:py-3 md:text-lg;
   }
   .textContainer-bottom > p {
     @apply text-sm font-semibold md:text-2xl;
@@ -64,7 +64,7 @@
     @apply absolute top-0 left-0 grid w-full text-center place-items-center;
   }
   .bottle {
-    @apply h-[400px] w-[250px] md:h-[550px] md:w-[500px] object-contain;
+    @apply h-[500px] w-[250px] md:h-[550px] md:w-[500px] object-contain;
   }
 
   /* leaf & co. */

@@ -9,7 +9,7 @@ const Header = () => {
       animate="animate"
       className="header"
     >
-      <span className="header-logo">CLEAN JUICE</span>
+      <span className="header-logo">Hafijur</span>
       <ul>
         <li>SHOP</li>
         <li>STORY</li>

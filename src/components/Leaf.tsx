@@ -1,8 +1,17 @@
-const Leaf = ({ className, imageUrl }) => {
+import { motion } from "framer-motion";
+import { leaf, leafWrapper } from "variants";
+
+const Leaf = ({ className, imageUrl, animationSpeed }) => {
   return (
-    <div className={className}>
-      <img className="leaf" src={imageUrl} alt="" />
-    </div>
+    <motion.div variants={leafWrapper} className={className}>
+      <motion.img
+        custom={animationSpeed}
+        variants={leaf}
+        className="leaf"
+        src={imageUrl}
+        alt=""
+      />
+    </motion.div>
   );
 };
 

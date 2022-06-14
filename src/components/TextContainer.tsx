@@ -1,13 +1,22 @@
 import { motion } from "framer-motion";
-import { fadeIn } from "variants";
+import { fadeIn, staggerContainer } from "variants";
 
 const TextContainer = () => {
   return (
-    <div className="textContainer">
+    <motion.div
+      variants={staggerContainer}
+      initial="initial"
+      animate="animate"
+      className="textContainer"
+    >
       {/* Top */}
       <div className="textContainer-top">
-        <span className="text-green-600">Find your clean juice</span>
-        <span className="first-letter:text-5xl">2 /4</span>
+        <motion.span variants={fadeIn()} className="text-green-600">
+          Frontend Developer
+        </motion.span>
+        <motion.span variants={fadeIn()} className="first-letter:text-5xl">
+          2 /4
+        </motion.span>
       </div>
 
       {/* Middle */}
@@ -17,17 +26,23 @@ const TextContainer = () => {
         animate="animate"
         className="textContainer-middle"
       >
-        <span className="">ORANGE</span>
+        <span className="">Hafijur</span>
       </motion.div>
 
       {/* Bottom */}
       <div className="textContainer-bottom">
-        <button>Show all the juices</button>
-        <p>
-          Your healthy <span> life </span> <br /> starts here with us
-        </p>
+        <motion.button className="" variants={fadeIn()}>
+          Download Resume
+        </motion.button>
+        <motion.p variants={fadeIn()}>
+          View Projects <span>or</span> <br /> Read About Me
+        </motion.p>
       </div>
-    </div>
+
+      <div className="absolute right-[100px] bottom-[60px]">
+        <div className="border-4 border-indigo-500 p-3"></div>
+      </div>
+    </motion.div>
   );
 };
 
