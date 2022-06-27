@@ -26,7 +26,7 @@ const TextContainer = () => {
         animate="animate"
         className="textContainer-middle"
       >
-        <span className="">Hafijur</span>
+        <span className="">Orange</span>
       </motion.div>
 
       {/* Bottom */}
