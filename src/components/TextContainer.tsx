@@ -12,7 +12,7 @@ const TextContainer = () => {
       {/* Top */}
       <div className="textContainer-top">
         <motion.span variants={fadeIn()} className="text-green-600">
-          Frontend Developer
+          Find your clean juice
         </motion.span>
         <motion.span variants={fadeIn()} className="first-letter:text-5xl">
           2 /4
@@ -32,10 +32,10 @@ const TextContainer = () => {
       {/* Bottom */}
       <div className="textContainer-bottom">
         <motion.button className="" variants={fadeIn()}>
-          Download Resume
+          show all the juices
         </motion.button>
         <motion.p variants={fadeIn()}>
-          View Projects <span>or</span> <br /> Read About Me
+          Your healthy <span> life </span> <br /> starts here with us!
         </motion.p>
       </div>
 
