@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply h-screen font-serif text-gray-900 bg-gray-100;
+    @apply h-screen font-serif text-gray-900 bg-gray-100 overflow-hidden;
   }
 }
 
