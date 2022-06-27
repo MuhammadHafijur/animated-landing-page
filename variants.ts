@@ -33,7 +33,7 @@ export const meWrapper: Variants = {
     y: -1000,
   },
   animate: {
-    y: -100,
+    y: 0,
     transition: {
       delay: 2.6,
       duration: 0.8,
